@@ -1,0 +1,23 @@
+spring:
+  application:
+    #应用服务名格式为：应用名-app
+    name: base-web
+  profiles:
+    active: dev
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.57.144
+server:
+  port: 8081
+  compression:
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    enabled: true
+
+#=========================使用注册中心的服务============
+#启用注册中心客户端
+eureka:
+  client:
+    enabled: true
+  instance:
+    prefer-ip-address: true
