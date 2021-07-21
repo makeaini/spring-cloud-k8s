@@ -2,7 +2,7 @@ eureka:
   client:
     serviceUrl:
       #defaultZone: http://localhost:8601/eureka
-      defaultZone: http://192.168.2.133:8601/eureka
+      defaultZone: http://eureka-server:8601/eureka
     healthcheck:
       enabled: true
 
