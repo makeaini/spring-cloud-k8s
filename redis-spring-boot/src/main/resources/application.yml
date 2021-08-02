@@ -1,0 +1,8 @@
+spring:
+  redis:
+    host: 192.168.2.132
+    port: 6379
+  profiles:
+    active: dev
+server:
+  port: 7777
